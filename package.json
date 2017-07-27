@@ -1,0 +1,31 @@
+{
+  "name": "lucas.js",
+  "version": "0.0.0",
+  "description": "A lightweight CSS grid layout for React",
+  "main": "index.js",
+  "repository": "https://github.com/azz/lucas.js",
+  "author": "Lucas Azzola",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^15.3.0 || ^16.0.0-alpha",
+    "react-dom": "^15.3.0 || ^16.0.0-alpha"
+  },
+  "dependencies": {
+    "FLIP": "https://github.com/GoogleChrome/flipjs.git#master",
+    "prop-types": "^15.5.10"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "prettier": "prettier --write \"**/*.js\"",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "eslint-plugin-react": "^7.1.0",
+    "jest": "^20.0.4",
+    "prettier": "^1.5.3"
+  }
+}

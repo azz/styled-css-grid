@@ -1,0 +1,14 @@
+---
+language: node_js
+node_js:
+  - stable
+dist: precise
+cache:
+  yarn: true
+  directories:
+  - node_modules
+install:
+  - yarn
+script:
+  - yarn lint
+  - yarn test -- --runInBand

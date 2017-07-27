@@ -1,0 +1,22 @@
+{
+  "root": true,
+  "extends": "eslint:recommended",
+  "plugins": ["prettier", "react", "import"],
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "curly": ["error"],
+    "import/no-extraneous-dependencies": ["error"],
+    "prefer-const": ["error"],
+    "prettier/prettier": "error",
+    "no-var": ["error"]
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}

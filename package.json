@@ -1,6 +1,6 @@
 {
   "name": "lucas.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A lightweight CSS grid layout for React",
   "main": "dist/index.js",
   "repository": "https://github.com/azz/lucas.js",

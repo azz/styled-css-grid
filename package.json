@@ -1,6 +1,6 @@
 {
   "name": "styled-css-grid",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A lightweight CSS grid layout for React, built with styled-components",
   "main": "dist/index.js",
   "repository": "https://github.com/azz/styled-css-grid",

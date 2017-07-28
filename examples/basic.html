@@ -1,0 +1,26 @@
+<head>
+<script src="../node_modules/react/umd/react.development.js"></script>
+<script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+<script src="../dist/index.js"></script>
+</head>
+
+<div class="outlet"></div>
+
+<style>
+.red { background: red }
+.green { background: green; }
+.blue { background: blue; }
+.yellow { background: yellow; }
+</style>
+
+<script>
+ReactDOM.render(
+  React.createElement(lucas.Grid, null, [
+    React.createElement(lucas.Cell, { className: "red" }),
+    React.createElement(lucas.Cell, { className: "green" }),
+    React.createElement(lucas.Cell, { className: "blue" }),
+    React.createElement(lucas.Cell, { className: "yellow" }),
+  ]),
+  document.querySelector('.outlet')
+);
+</script>

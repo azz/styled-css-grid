@@ -12,20 +12,36 @@
   },
   "dependencies": {
     "FLIP": "https://github.com/GoogleChrome/flipjs.git#master",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "styled-components": "^2.1.1"
   },
   "scripts": {
     "lint": "eslint .",
     "prettier": "prettier --write \"**/*.js\"",
-    "test": "jest"
+    "test": "jest",
+    "build": "browserify index.js -o dist/index.js -s lucas"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "browserify-shim": "^3.8.14",
     "eslint": "^4.3.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-react": "^7.1.0",
     "jest": "^20.0.4",
-    "prettier": "^1.5.3"
+    "prettier": "^1.5.3",
+    "react": "next",
+    "react-dom": "next"
+  },
+  "browserify": {
+    "transform": ["babelify", "browserify-shim"]
+  },
+  "browserify-shim": {
+    "react": "React",
+    "react-dom": "ReactDOM"
   }
 }

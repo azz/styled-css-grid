@@ -1,4 +1,5 @@
 <head>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 <script src="../node_modules/react/umd/react.development.js"></script>
 <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
 <script src="../dist/index.js"></script>
@@ -7,20 +8,46 @@
 <div class="outlet"></div>
 
 <style>
-.red { background: red }
-.green { background: green; }
-.blue { background: blue; }
-.yellow { background: yellow; }
+.color--1 { background: #3366cc }
+.color--2 { background: #dc3912 }
+.color--3 { background: #ff9900 }
+.color--4 { background: #109618 }
+.color--5 { background: #990099 }
+.color--6 { background: #0099c6 }
+.color--7 { background: #dd4477 }
+.color--8 { background: #66aa00 }
+.color--9 { background: #b82e2e }
+.color--10 { background: #316395 }
+
+.cell {
+  text-align: center;
+  font-size: 5em;
+  color: #dddddd;
+  justify-content: center;
+}
 </style>
 
-<script>
+<script type="text/babel" data-presets="react">
+const { Grid, Cell } = lucas
+
 ReactDOM.render(
-  React.createElement(lucas.Grid, null, [
-    React.createElement(lucas.Cell, { className: "red" }),
-    React.createElement(lucas.Cell, { className: "green" }),
-    React.createElement(lucas.Cell, { className: "blue" }),
-    React.createElement(lucas.Cell, { className: "yellow" }),
-  ]),
+  <Grid>
+    <Cell width={2} className={"cell color--1"}>
+      1
+    </Cell>
+    <Cell height={2} className={"cell color--2"}>
+      2
+    </Cell>
+    <Cell height={2} className={"cell color--3"}>
+      3
+    </Cell>
+    <Cell className={"cell color--4"}>
+      4
+    </Cell>
+    <Cell width={2} className={"cell color--5"}>
+      5
+    </Cell>
+  </Grid>,
   document.querySelector('.outlet')
-);
+)
 </script>

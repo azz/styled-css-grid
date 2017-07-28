@@ -26,6 +26,7 @@
   justify-content: center;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 200;
+  display: inline-flex;
 }
 
 .cell a {
@@ -64,28 +65,30 @@ class Example extends React.Component {
     return (
       <Grid columns={columns}>
         <Cell width={2} className={"cell color--1"}>
-          Build interesting layouts!
+          Build interesting layouts 👀
         </Cell>
         <Cell height={2} className={"cell color--2"}>
-          Making this in old-school CSS would make you cry!
+          Making this in old-school CSS would make you 😢
         </Cell>
         <Cell height={2} className={"cell color--3"}>
-          But this is effortless.
+          Making this is effortless 🤷
         </Cell>
         <Cell className={"cell color--4"}>
-          <em>Responsive</em>
+          <em>Responsive</em> 💻📱
         </Cell>
         <Cell width={2} className={"cell color--5"}>
-          And it works in <a target="_blank" href="http://caniuse.com/#feat=css-grid">most</a> browsers!
+          <span>
+            Works in <a target="_blank" href="http://caniuse.com/#feat=css-grid">most</a> browsers ✅
+          </span>
         </Cell>
         <Cell className={"cell color--6"}>
-          <a href="https://github.com/azz/lucas.js">GitHub</a>
+          <span><a href="https://github.com/azz/lucas.js">GitHub</a> 📘</span>
         </Cell>
         <Cell className={"cell color--7"}>
-          <a href="https://npmjs.org/lucas.js">npm</a>
+          <span><a href="https://npmjs.org/lucas.js">npm</a> 📦</span>
         </Cell>
         <Cell className={"cell color--8"}>
-          <code>lucas.js</code>
+          <code>lucas.js</code> ⭐
         </Cell>
       </Grid>
     );

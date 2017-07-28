@@ -2,10 +2,15 @@
   "name": "lucas.js",
   "version": "0.0.0",
   "description": "A lightweight CSS grid layout for React",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/azz/lucas.js",
   "author": "Lucas Azzola",
   "license": "MIT",
+  "files":[
+    "dist/index.js",
+    "README.md",
+    "LICENSE"
+  ],
   "peerDependencies": {
     "react": "^15.3.0 || ^16.0.0-alpha",
     "react-dom": "^15.3.0 || ^16.0.0-alpha"

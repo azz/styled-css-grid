@@ -21,10 +21,10 @@ import React from "react";
 import { Grid, Cell } from "lucas.js"
 
 const MyGrid = () => (
-  <Grid columns={2} gap={2}>
+  <Grid columns={2} gap="2px">
     <Row>foo</Row>
     <Row height={2}>bar</Row>
-    <Row>baz</Row>
+    <Row width={2}>baz</Row>
   </Grid>
 );
 ```

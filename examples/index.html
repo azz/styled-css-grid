@@ -1,8 +1,8 @@
 <head>
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-<script src="../node_modules/react/umd/react.development.js"></script>
-<script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
-<script src="../dist/index.js"></script>
+<script src="https://unpkg.com/react@next/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@next/umd/react-dom.development.js"></script>
+<script src="lucas.js"></script>
 </head>
 
 <div class="outlet"></div>
@@ -28,10 +28,10 @@
 </style>
 
 <script type="text/babel" data-presets="react">
-const { Grid, Cell } = lucas
+const { Grid, Cell } = lucas;
 
 ReactDOM.render(
-  <Grid>
+  <Grid columns={3}>
     <Cell width={2} className={"cell color--1"}>
       1
     </Cell>

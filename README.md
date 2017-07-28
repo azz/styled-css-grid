@@ -8,13 +8,15 @@
 
 ## installation
 
+Install React and [styled-components], then:
+
 ```bash
 $ yarn add lucas.js
 ```
 
 ## usage
 
-```js
+```jsx
 import React from "react";
 import { Grid, Cell } from "lucas.js"
 

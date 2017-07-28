@@ -1,9 +1,9 @@
 {
-  "name": "lucas.js",
-  "version": "0.1.1",
-  "description": "A lightweight CSS grid layout for React",
+  "name": "styled-css-grid",
+  "version": "0.0.0",
+  "description": "A lightweight CSS grid layout for React, built with styled-components",
   "main": "dist/index.js",
-  "repository": "https://github.com/azz/lucas.js",
+  "repository": "https://github.com/azz/styled-css-grid",
   "author": "Lucas Azzola",
   "license": "MIT",
   "files": [
@@ -16,7 +16,7 @@
     "prettier": "prettier --write \"lib/*.js\"",
     "test": "jest",
     "build": "yarn build:bundle && yarn build:examples",
-    "build:bundle": "browserify index.js -o dist/index.js -s lucas",
+    "build:bundle": "browserify index.js -o dist/index.js -s StyledCssGrid",
     "build:examples": "node scripts/build-examples"
   },
   "peerDependencies": {
@@ -24,10 +24,7 @@
     "react-dom": "*",
     "styled-components": "^2"
   },
-  "dependencies": {
-    "FLIP": "https://github.com/GoogleChrome/flipjs.git#master",
-    "prop-types": "^15.5.10"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",

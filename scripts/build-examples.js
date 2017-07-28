@@ -11,4 +11,4 @@ sh.cp(
   "./node_modules/react-dom/umd/react-dom.production.min.js",
   "./examples/react-dom.js"
 );
-sh.cp("./dist/index.js", "./examples/lucas.js");
+sh.cp("./dist/index.js", "./examples/styled-css-grid.js");

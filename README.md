@@ -1,8 +1,8 @@
-# lucas.js
+# `styled-css-grid`
 
-[![Travis](https://img.shields.io/travis/azz/lucas.js.svg?style=flat-square)](https://travis-ci.org/azz/lucas.js)
+[![Travis](https://img.shields.io/travis/azz/styled-css-grid.svg?style=flat-square)](https://travis-ci.org/azz/styled-css-grid)
 [![Prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![npm](https://img.shields.io/npm/v/lucas.js.svg?style=flat-square)](https://npmjs.org/lucas.js)
+[![npm](https://img.shields.io/npm/v/styled-css-grid.svg?style=flat-square)](https://npmjs.org/styled-css-grid)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 
 > A lightweight [CSS grid] layout for React, built with [styled-components] 💅.
@@ -16,14 +16,14 @@ See the **[website]**.
 Install React and [styled-components], then:
 
 ```bash
-$ yarn add lucas.js
+$ yarn add styled-css-grid
 ```
 
 ## usage
 
 ```jsx
 import React from "react";
-import { Grid, Cell } from "lucas.js";
+import { Grid, Cell } from "styled-css-grid";
 
 const MyGrid = () => (
   <Grid columns={2} gap="2px">
@@ -55,6 +55,6 @@ Props:
 * `gap`: Gap between cells. Default is `"8px"`.
 * `minRowHeight`: Minimum height of each row. Default is `"20vh"`.
 
-[website]: https://lucasjs.netlify.com/
+[website]: https://styled-css-grid.netlify.com/
 [CSS grid]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 [styled-components]: https://github.com/styled-components/styled-components

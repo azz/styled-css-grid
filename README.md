@@ -23,13 +23,13 @@ $ yarn add lucas.js
 
 ```jsx
 import React from "react";
-import { Grid, Cell } from "lucas.js"
+import { Grid, Cell } from "lucas.js";
 
 const MyGrid = () => (
   <Grid columns={2} gap="2px">
-    <Row>foo</Row>
-    <Row height={2}>bar</Row>
-    <Row width={2}>baz</Row>
+    <Cell>foo</Cell>
+    <Cell height={2}>bar</Cell>
+    <Cell width={2}>baz</Cell>
   </Grid>
 );
 ```

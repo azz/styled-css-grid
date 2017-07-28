@@ -13,11 +13,11 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "prettier": "prettier --write \"**/*.js\"",
+    "prettier": "prettier --write \"lib/*.js\"",
     "test": "jest",
     "build": "yarn build:bundle && yarn build:examples",
     "build:bundle": "browserify index.js -o dist/index.js -s lucas",
-    "build:examples": "cp ./dist/index.js examples/lucas.js"
+    "build:examples": "node scripts/build-examples"
   },
   "peerDependencies": {
     "react": "*",
@@ -31,6 +31,7 @@
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "babel-standalone": "^6.25.0",
     "babelify": "^7.3.0",
     "browserify": "^14.4.0",
     "browserify-shim": "^3.8.14",
@@ -40,9 +41,12 @@
     "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-react": "^7.1.0",
     "jest": "^20.0.4",
+    "jest-styled-components": "^4.2.2",
     "prettier": "^1.5.3",
     "react": "next",
     "react-dom": "next",
+    "react-test-renderer": "next",
+    "shelljs": "^0.7.8",
     "styled-components": "^2.1.1"
   },
   "browserify": {

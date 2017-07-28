@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Cell/> matches snapshot with default args 1`] = `
+.c0 {
+  -webkit-box-packjustify-self: stretch;
+  -webkit-justify-self: stretch;
+  -ms-flex-packjustify-self: stretch;
+  justify-self: stretch;
+  color: #222;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: space-around;
+  align-content: space-around;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+}
+
+<section
+  className="c0"
+/>
+`;

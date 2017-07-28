@@ -4,7 +4,7 @@
 
 ## demo
 
-* [Codepen demo](https://codepen.io/derflat/pen/QpaNMy)
+See the **[website]**.
 
 ## installation
 
@@ -29,5 +29,27 @@ const MyGrid = () => (
 );
 ```
 
+## api
+
+### `Cell`
+
+A cell. Not too much to say...
+
+Props:
+
+* `width`: Cell width in units, default is `1`.
+* `height`: Cell height in units, default is `1`.
+
+### `Grid`
+
+Wrap your cells in `Grid`. Pretty simple.
+
+Props:
+
+* `columns`: Number of columns to draw, default is `3`.
+* `gap`: Gap between cells. Default is `"8px"`.
+* `minRowHeight`: Minimum height of each row. Default is `"20vh"`.
+
+[website]: https://lucasjs.netlify.com/
 [CSS grid]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 [styled-components]: https://github.com/styled-components/styled-components

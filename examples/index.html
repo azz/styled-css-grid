@@ -1,8 +1,8 @@
 <head>
-<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-<script src="https://unpkg.com/react@next/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@next/umd/react-dom.development.js"></script>
-<script src="lucas.js"></script>
+  <script src="babel.js"></script>
+  <script src="react.js"></script>
+  <script src="react-dom.js"></script>
+  <script src="lucas.js"></script>
 </head>
 
 <div class="outlet"></div>
@@ -21,33 +21,79 @@
 
 .cell {
   text-align: center;
-  font-size: 5em;
+  font-size: 3em;
   color: #dddddd;
   justify-content: center;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 200;
+}
+
+.cell a {
+  color: #cecece;
 }
 </style>
 
 <script type="text/babel" data-presets="react">
 const { Grid, Cell } = lucas;
 
+const THREE_COL_WIDTH = 650;
+
+class Example extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { columns: 3 };
+    this._onResize = this._onResize.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this._onResize, { passive: true });
+    this._onResize();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this._onResize);
+  }
+
+  _onResize() {
+    const columns = document.body.clientWidth < THREE_COL_WIDTH ? 2 : 3;
+    this.setState({ columns });
+  }
+
+  render() {
+    const { columns } = this.state;
+    return (
+      <Grid columns={columns}>
+        <Cell width={2} className={"cell color--1"}>
+          Build interesting layouts!
+        </Cell>
+        <Cell height={2} className={"cell color--2"}>
+          Making this in old-school CSS would make you cry!
+        </Cell>
+        <Cell height={2} className={"cell color--3"}>
+          But this is effortless.
+        </Cell>
+        <Cell className={"cell color--4"}>
+          <em>Responsive</em>
+        </Cell>
+        <Cell width={2} className={"cell color--5"}>
+          And it works in <a target="_blank" href="http://caniuse.com/#feat=css-grid">most</a> browsers!
+        </Cell>
+        <Cell className={"cell color--6"}>
+          <a href="https://github.com/azz/lucas.js">GitHub</a>
+        </Cell>
+        <Cell className={"cell color--7"}>
+          <a href="https://npmjs.org/lucas.js">npm</a>
+        </Cell>
+        <Cell className={"cell color--8"}>
+          <code>lucas.js</code>
+        </Cell>
+      </Grid>
+    );
+  }
+}
+
 ReactDOM.render(
-  <Grid columns={3}>
-    <Cell width={2} className={"cell color--1"}>
-      1
-    </Cell>
-    <Cell height={2} className={"cell color--2"}>
-      2
-    </Cell>
-    <Cell height={2} className={"cell color--3"}>
-      3
-    </Cell>
-    <Cell className={"cell color--4"}>
-      4
-    </Cell>
-    <Cell width={2} className={"cell color--5"}>
-      5
-    </Cell>
-  </Grid>,
+  <Example />,
   document.querySelector('.outlet')
-)
+);
 </script>

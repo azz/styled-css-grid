@@ -1,5 +1,10 @@
 # lucas.js
 
+[![Travis](https://img.shields.io/travis/azz/lucas.js.svg?style=flat-square)](https://travis-ci.org/azz/lucas.js)
+[![Prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![npm](https://img.shields.io/npm/v/lucas.js.svg?style=flat-square)](https://npmjs.org/lucas.js)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
+
 > A lightweight [CSS grid] layout for React, built with [styled-components] 💅.
 
 ## demo

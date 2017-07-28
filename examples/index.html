@@ -8,16 +8,16 @@
 <div class="outlet"></div>
 
 <style>
-.color--1 { background: #3366cc }
-.color--2 { background: #dc3912 }
-.color--3 { background: #ff9900 }
-.color--4 { background: #109618 }
-.color--5 { background: #990099 }
-.color--6 { background: #0099c6 }
-.color--7 { background: #dd4477 }
-.color--8 { background: #66aa00 }
+.color--1 { background: #1f77b4 }
+.color--2 { background: #d62728 }
+.color--3 { background: #ff7f0e }
+.color--4 { background: #9467bd }
+.color--5 { background: #8c564b }
+.color--6 { background: #e377c2 }
+.color--7 { background: #7f7f7f }
+.color--8 { background: #bcbd22 }
 .color--9 { background: #b82e2e }
-.color--10 { background: #316395 }
+.color--10 { background: #17becf }
 
 .cell {
   text-align: center;
@@ -31,6 +31,10 @@
 
 .cell a {
   color: #cecece;
+}
+
+code {
+  white-space: pre;
 }
 </style>
 
@@ -56,7 +60,7 @@ class Example extends React.Component {
   }
 
   _onResize() {
-    const columns = document.body.clientWidth < THREE_COL_WIDTH ? 2 : 3;
+    const columns = document.body.clientWidth < THREE_COL_WIDTH ? 4 : 6;
     this.setState({ columns });
   }
 
@@ -64,31 +68,34 @@ class Example extends React.Component {
     const { columns } = this.state;
     return (
       <Grid columns={columns}>
-        <Cell width={2} className={"cell color--1"}>
+        <Cell width={4} height={2} className={"cell color--1"}>
           Build interesting layouts 👀
         </Cell>
-        <Cell height={2} className={"cell color--2"}>
+        <Cell width={2} height={4} className={"cell color--2"}>
           Making this in old-school CSS would make you 😢
         </Cell>
-        <Cell height={2} className={"cell color--3"}>
+        <Cell width={2} height={4} className={"cell color--3"}>
           Making this is effortless 🤷
         </Cell>
-        <Cell className={"cell color--4"}>
-          <em>Responsive</em> 💻📱
+        <Cell width={2} height={2} className={"cell color--4"}>
+          <span><h3>lucas.js</h3> ⭐</span>
         </Cell>
-        <Cell width={2} className={"cell color--5"}>
+        <Cell width={4} height={2} className={"cell color--5"}>
           <span>
             Works in <a target="_blank" href="http://caniuse.com/#feat=css-grid">most</a> browsers ✅
           </span>
         </Cell>
-        <Cell className={"cell color--6"}>
+        <Cell width={2} height={2} className={"cell color--8"}>
+          <em>Responsive</em> 💻📱
+        </Cell>
+        <Cell width={2} height={1} className={"cell color--7"}>
           <span><a href="https://github.com/azz/lucas.js">GitHub</a> 📘</span>
         </Cell>
-        <Cell className={"cell color--7"}>
+        <Cell width={2} height={1} className={"cell color--9"}>
           <span><a href="https://npmjs.org/lucas.js">npm</a> 📦</span>
         </Cell>
-        <Cell className={"cell color--8"}>
-          <code>lucas.js</code> ⭐
+        <Cell width={4} height={1} className={"cell color--6"}>
+          <span>Built with <code>react</code> + <code>styled-components</code> 💅</span>
         </Cell>
       </Grid>
     );

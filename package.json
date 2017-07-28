@@ -1,12 +1,12 @@
 {
   "name": "lucas.js",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A lightweight CSS grid layout for React",
   "main": "dist/index.js",
   "repository": "https://github.com/azz/lucas.js",
   "author": "Lucas Azzola",
   "license": "MIT",
-  "files":[
+  "files": [
     "dist/index.js",
     "README.md",
     "LICENSE"
@@ -43,7 +43,10 @@
     "react-dom": "next"
   },
   "browserify": {
-    "transform": ["babelify", "browserify-shim"]
+    "transform": [
+      "babelify",
+      "browserify-shim"
+    ]
   },
   "browserify-shim": {
     "react": "React",

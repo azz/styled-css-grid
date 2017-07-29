@@ -1,23 +1,27 @@
 {
   "name": "styled-css-grid",
   "version": "0.1.0",
-  "description": "A lightweight CSS grid layout for React, built with styled-components",
-  "main": "dist/index.js",
+  "description": "A tiny CSS grid layout for React, built with styled-components",
+  "main": "dist/syled-css-grid.umd.js",
+  "module": "dist/syled-css-grid.esm.js",
   "repository": "https://github.com/azz/styled-css-grid",
   "author": "Lucas Azzola",
   "license": "MIT",
   "files": [
-    "dist/index.js",
-    "README.md",
-    "LICENSE"
+    "dist"
+  ],
+  "keywords": [
+    "grid",
+    "css",
+    "react",
+    "styled-components"
   ],
   "scripts": {
-    "lint": "eslint .",
-    "prettier": "prettier --write \"lib/*.js\"",
+    "lint": "eslint . --ignore-path .gitignore",
+    "prettier": "prettier --write \"{lib,website,scripts}/*.js\"",
     "test": "jest",
-    "build": "yarn build:bundle && yarn build:examples",
-    "build:bundle": "browserify index.js -o dist/index.js -s StyledCssGrid",
-    "build:examples": "node scripts/build-examples"
+    "build": "node scripts/build",
+    "start": "http-server website"
   },
   "peerDependencies": {
     "react": "*",
@@ -26,34 +30,29 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "babel-standalone": "^6.25.0",
     "babelify": "^7.3.0",
-    "browserify": "^14.4.0",
-    "browserify-shim": "^3.8.14",
     "eslint": "^4.3.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-react": "^7.1.0",
+    "http-server": "^0.10.0",
     "jest": "^20.0.4",
     "jest-styled-components": "^4.2.2",
     "prettier": "^1.5.3",
     "react": "next",
     "react-dom": "next",
     "react-test-renderer": "next",
+    "rollup": "^0.45.2",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^1.1.1",
+    "rollup-plugin-uglify": "^2.0.1",
     "shelljs": "^0.7.8",
     "styled-components": "^2.1.1"
-  },
-  "browserify": {
-    "transform": [
-      "babelify",
-      "browserify-shim"
-    ]
-  },
-  "browserify-shim": {
-    "react": "React",
-    "react-dom": "ReactDOM"
   }
 }

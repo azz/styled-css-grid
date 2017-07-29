@@ -1,4 +1,4 @@
 node_modules
-dist/*.js
-examples/*.js
+dist
+website/bin
 *.log

@@ -5,8 +5,8 @@ exports[`<Grid /> matches snapshot with default args 1`] = `
   min-height: 100%;
   display: grid;
   grid-auto-flow: row dense;
-  grid-auto-rows: minmax(20vh,auto);
-  grid-template-rows: minmax(20vh,auto);
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-rows: minmax(20px,auto);
   grid-template-columns: repeat(3,1fr);
   grid-gap: 8px 8px;
 }

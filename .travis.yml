@@ -2,13 +2,24 @@
 language: node_js
 node_js:
   - stable
+  - 4
+node_js:
+  - stable
 dist: precise
 cache:
   yarn: true
   directories:
-  - node_modules
+    - node_modules
+notifications:
+  email: false
 install:
   - yarn
 script:
   - yarn lint
+  - yarn build --production
   - yarn test -- --runInBand
+after_success:
+  - yarn semantic-release
+branches:
+  only:
+    - master

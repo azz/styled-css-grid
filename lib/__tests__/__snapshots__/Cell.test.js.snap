@@ -6,7 +6,6 @@ exports[`<Cell/> matches snapshot with default args 1`] = `
   -webkit-justify-self: stretch;
   -ms-flex-packjustify-self: stretch;
   justify-self: stretch;
-  color: #222;
   height: 100%;
   -webkit-flex-flow: column wrap;
   -ms-flex-flow: column wrap;

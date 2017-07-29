@@ -16,10 +16,10 @@ install:
   - yarn
 script:
   - yarn lint
-  - yarn build -- --production
+  - yarn build --production
   - yarn test -- --runInBand
 after_success:
   - yarn semantic-release
 branches:
   except:
-    - /^v\d+\.\d+\.\d+$/
+    - master

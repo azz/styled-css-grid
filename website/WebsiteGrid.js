@@ -81,4 +81,4 @@ export default class WebsiteGrid extends React.Component {
       </Grid>
     );
   }
-};
+}

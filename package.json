@@ -1,6 +1,6 @@
 {
   "name": "styled-css-grid",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "description": "A tiny CSS grid layout for React, built with styled-components",
   "main": "dist/syled-css-grid.umd.js",
   "module": "dist/syled-css-grid.esm.js",
@@ -21,7 +21,8 @@
     "prettier": "prettier --write \"{lib,website,scripts}/*.js\"",
     "test": "jest",
     "build": "node scripts/build",
-    "start": "http-server website"
+    "start": "http-server website",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "peerDependencies": {
     "react": "*",
@@ -53,6 +54,7 @@
     "rollup-plugin-replace": "^1.1.1",
     "rollup-plugin-uglify": "^2.0.1",
     "shelljs": "^0.7.8",
-    "styled-components": "^2.1.1"
+    "styled-components": "^2.1.1",
+    "semantic-release": "^6.3.6"
   }
 }

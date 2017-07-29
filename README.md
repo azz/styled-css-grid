@@ -52,7 +52,7 @@ Wrap your cells in `Grid`. Pretty simple.
 
 Props:
 
-* `columns`: Number of columns to draw, default is `3`.
+* `columns`: Number of columns to draw, default is `12`.
 * `gap`: Gap between cells. Default is `"8px"`.
 * `minRowHeight`: Minimum height of each row. Default is `"20px"`.
 

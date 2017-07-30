@@ -18,7 +18,7 @@
     "styled-components"
   ],
   "scripts": {
-    "lint": "eslint . --ignore-path .gitignore",
+    "lint": "eslint .",
     "prettier": "prettier --write \"{lib,website,scripts}/*.js\"",
     "test": "jest",
     "build": "node scripts/build",

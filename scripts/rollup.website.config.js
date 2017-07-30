@@ -15,7 +15,7 @@ export default {
   entry: "website/website.js",
   dest: "website/bin/website.js",
   format: "iife",
-  sourceMap: !prod,
+  // sourceMap: !prod,
   plugins: [
     resolve(),
     replace({ "process.env.NODE_ENV": JSON.stringify("production") }),

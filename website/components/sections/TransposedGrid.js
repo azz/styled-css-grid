@@ -1,8 +1,8 @@
 import React from "react";
 import { stripIndent } from "common-tags";
 import { flatMap, range } from "lodash-es";
-import { Grid } from "../../";
-import Cell from "./DemoCell";
+import { Grid } from "../../../";
+import Cell from "../DemoCell";
 
 const Columns = ({ counts }) =>
   flatMap(counts, (count, i) =>

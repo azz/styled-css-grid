@@ -1,6 +1,12 @@
 import React from "react";
-import TraditionalGrid, { code as traditionalCode } from "./TraditionalGrid";
-import TransposedGrid, { code as transposedCode } from "./TransposedGrid";
+import Centering, { code as centeringCode } from "./sections/Centering";
+import HolyGrail, { code as holyGrailCode } from "./sections/HolyGrail";
+import TraditionalGrid, {
+  code as traditionalCode
+} from "./sections/TraditionalGrid";
+import TransposedGrid, {
+  code as transposedCode
+} from "./sections/TransposedGrid";
 import Example from "./Example";
 import Heading from "./Heading";
 
@@ -45,6 +51,44 @@ const Main = () =>
       }
       output={<TransposedGrid />}
       path={"website/components/TransposedGrid.js"}
+    />
+
+    <Heading name="holy-grail">Holy Grail Layout</Heading>
+    <p>
+      The{" "}
+      <a href="https://en.wikipedia.org/wiki/Holy_Grail_(web_design)">
+        Holy Grail
+      </a>{" "}
+      layout is trivial!
+    </p>
+    <Example
+      input={
+        <pre>
+          <code>
+            {holyGrailCode}
+          </code>
+        </pre>
+      }
+      output={<HolyGrail />}
+      path={"website/components/HolyGrail.js"}
+    />
+
+    <Heading name="centering">Centering Content</Heading>
+    <p>
+      Centering content (especially verticically) has traditionally been quite
+      difficult in CSS. <code>styled-css-grid</code> offers two helper props,{" "}
+      <code>middle</code> and <code>center</code> to simpify the process.
+    </p>
+    <Example
+      input={
+        <pre>
+          <code>
+            {centeringCode}
+          </code>
+        </pre>
+      }
+      output={<Centering />}
+      path={"website/components/Centering.js"}
     />
   </main>;
 

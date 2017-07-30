@@ -22,7 +22,7 @@
     "prettier": "prettier --write \"{lib,website,scripts}/*.js\"",
     "test": "jest",
     "build": "node scripts/build",
-    "watch:site": "rollup -c scripts/rollup.website.config.js --watch",
+    "watch:site": "rollup -c scripts/rollup.website.config.js -w",
     "start": "http-server website",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },

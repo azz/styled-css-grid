@@ -11,7 +11,8 @@
     "import/no-extraneous-dependencies": ["error"],
     "prefer-const": ["error"],
     "prettier/prettier": "error",
-    "no-var": ["error"]
+    "no-var": ["error"],
+    "react/prop-types": ["off"]
   },
   "parserOptions": {
     "sourceType": "module",

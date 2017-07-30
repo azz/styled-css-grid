@@ -1,6 +1,12 @@
+import "normalize.css/normalize.css";
+
+import "prismjs/themes/prism.css";
+import "prismjs";
+import "prismjs/components/prism-jsx";
+
 import React from "react";
 import * as ReactDOM from "react-dom";
 
-import WebsiteGrid from "./WebsiteGrid";
+import Page from "./components/Page";
 
-ReactDOM.render(<WebsiteGrid />, document.querySelector(".outlet"));
+ReactDOM.render(<Page />, document.querySelector(".outlet"));

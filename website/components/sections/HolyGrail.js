@@ -65,7 +65,7 @@ const HolyGrailSection = () =>
         </pre>
       }
       output={<HolyGrail />}
-      path={"website/components/HolyGrail.js"}
+      path={"website/components/sections/HolyGrail.js"}
     />
   </section>;
 

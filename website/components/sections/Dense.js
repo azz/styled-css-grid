@@ -75,7 +75,7 @@ const DenseSection = () =>
         </pre>
       }
       output={<Dense />}
-      path={"website/components/Dense.js"}
+      path={"website/components/sections/Dense.js"}
     />
   </section>;
 

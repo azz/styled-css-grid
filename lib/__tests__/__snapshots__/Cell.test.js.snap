@@ -1,15 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Cell/> matches snapshot with default args 1`] = `
+exports[`<Cell/> 'middle' prop vertically aligns contents 1`] = `
 .c0 {
+  height: 100%;
+  min-width: 0;
+  overflow: hidden;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: space-around;
+  align-content: space-around;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-packjustify-self: stretch;
   -webkit-justify-self: stretch;
   -ms-flex-packjustify-self: stretch;
   justify-self: stretch;
+}
+
+<section
+  className="c0"
+/>
+`;
+
+exports[`<Cell/> matches snapshot with default args 1`] = `
+.c0 {
   height: 100%;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
+  min-width: 0;
+  overflow: hidden;
   -webkit-align-content: space-around;
   -ms-flex-line-pack: space-around;
   align-content: space-around;

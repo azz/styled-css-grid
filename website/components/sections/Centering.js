@@ -1,6 +1,8 @@
 import React from "react";
 import { stripIndent } from "common-tags";
 import { Grid } from "../../../";
+import Example from "../Example";
+import Heading from "../Heading";
 import Cell from "../DemoCell";
 
 const Centering = () =>
@@ -24,5 +26,25 @@ const code = stripIndent`
   </Grid>
 `;
 
-export default Centering;
-export { code };
+const CenteringSection = () =>
+  <section>
+    <Heading name="centering">Centering Content</Heading>
+    <p>
+      Centering content (especially verticically) has traditionally been quite
+      difficult in CSS. <code>styled-css-grid</code> offers two helper props,{" "}
+      <code>middle</code> and <code>center</code> to simpify the process.
+    </p>
+    <Example
+      input={
+        <pre>
+          <code>
+            {code}
+          </code>
+        </pre>
+      }
+      output={<Centering />}
+      path={"website/components/Centering.js"}
+    />
+  </section>;
+
+export default CenteringSection;

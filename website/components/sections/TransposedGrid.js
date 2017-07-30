@@ -2,6 +2,8 @@ import React from "react";
 import { stripIndent } from "common-tags";
 import { flatMap, range } from "lodash-es";
 import { Grid } from "../../../";
+import Example from "../Example";
+import Heading from "../Heading";
 import Cell from "../DemoCell";
 
 const Columns = ({ counts }) =>
@@ -31,5 +33,31 @@ const code = stripIndent`
   </Grid>
 `;
 
-export default TransposedGrid;
-export { code };
+const TransposedGridSection = () =>
+  <section>
+    <Heading name="transposed">Transposed Grid</Heading>
+    <p>
+      However, transposing this is difficult without <code>display: grid</code>,
+      even with flexbox. With <code>styled-css-grid</code> this is made simple!
+      Just use <code>height</code> instead of <code>width</code> and add{" "}
+      <code>flow=&quot;column&quot;</code> to the <code>Grid</code> component.
+      This maps directly to the{" "}
+      <a href="https://mdn.io/grid-auto-flow">
+        <code>grid-auto-flow</code>
+      </a>{" "}
+      CSS property.
+    </p>
+    <Example
+      input={
+        <pre>
+          <code>
+            {code}
+          </code>
+        </pre>
+      }
+      output={<TransposedGrid />}
+      path={"website/components/TransposedGrid.js"}
+    />
+  </section>;
+
+export default TransposedGridSection;

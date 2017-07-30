@@ -1,9 +1,11 @@
 import React from "react";
 import { stripIndent } from "common-tags";
 import { Grid } from "../../../";
+import Example from "../Example";
+import Heading from "../Heading";
 import Cell from "../DemoCell";
 
-const Centering = () =>
+const HolyGrail = () =>
   <article>
     <Grid columns={12} minRowHeight="45px">
       <Cell width={12} center middle>
@@ -44,5 +46,27 @@ const code = stripIndent`
   </Grid>
 `;
 
-export default Centering;
-export { code };
+const HolyGrailSection = () =>
+  <section>
+    <Heading name="holy-grail">Holy Grail Layout</Heading>
+    <p>
+      The{" "}
+      <a href="https://en.wikipedia.org/wiki/Holy_Grail_(web_design)">
+        Holy Grail
+      </a>{" "}
+      layout is trivial!
+    </p>
+    <Example
+      input={
+        <pre>
+          <code>
+            {code}
+          </code>
+        </pre>
+      }
+      output={<HolyGrail />}
+      path={"website/components/HolyGrail.js"}
+    />
+  </section>;
+
+export default HolyGrailSection;

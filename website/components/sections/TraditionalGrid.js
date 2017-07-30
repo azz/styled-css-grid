@@ -2,6 +2,8 @@ import React from "react";
 import { stripIndent } from "common-tags";
 import { flatMap, range } from "lodash-es";
 import { Grid } from "../../../";
+import Example from "../Example";
+import Heading from "../Heading";
 import Cell from "../DemoCell";
 
 const Rows = ({ counts }) =>
@@ -31,5 +33,24 @@ const code = stripIndent`
   </Grid>
 `;
 
-export default TraditionalGrid;
-export { code };
+const TraditionalGridSection = () =>
+  <section>
+    <Heading name="traditional">Traditional Grid</Heading>
+    <p>
+      We have all seen this before, but it is super easy to build with{" "}
+      <code>styled-css-grid</code>.
+    </p>
+    <Example
+      input={
+        <pre>
+          <code>
+            {code}
+          </code>
+        </pre>
+      }
+      output={<TraditionalGrid />}
+      path={"website/components/TraditionalGrid.js"}
+    />
+  </section>;
+
+export default TraditionalGridSection;

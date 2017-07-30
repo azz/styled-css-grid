@@ -13,6 +13,7 @@ const FooterContainer = styled.footer`
   a {
     color: black;
     font-weight: bold;
+    text-decoration: none;
   }
 `;
 

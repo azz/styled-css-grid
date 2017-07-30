@@ -46,6 +46,8 @@ Props:
 
 * `width`: Cell width in units, default is `1`.
 * `height`: Cell height in units, default is `1`.
+* `left`: The [grid-column-start] CSS property. Not provided by default.
+* `top`: The [grid-row-start] CSS property. Not provided by default.
 * `middle`: Vertically align the contents of the cell. Default is `false`.
 * `center`: Horizontally align the text contents of the cell. Default is `false`.
 
@@ -58,9 +60,11 @@ Props:
 * `columns`: Number of columns to draw, default is `12`.
 * `gap`: Gap between cells. Default is `"8px"`.
 * `minRowHeight`: Minimum height of each row. Default is `"20px"`.
-* `flow`: The [grid-auto-flow] CSS property. Default is `"row dense"`.
+* `flow`: The [grid-auto-flow] CSS property. Default is `"row"`.
 
 [website]: https://styled-css-grid.js.org/
-[CSS grid]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+[CSS grid]: https://mdn.io/CSS_Grid_Layout
 [styled-components]: https://github.com/styled-components/styled-components
 [grid-auto-flow]: https://mdn.io/grid-auto-flow
+[grid-row-start]: https://mdn.io/grid-row-start
+[grid-column-start]: https://mdn.io/grid-column-start

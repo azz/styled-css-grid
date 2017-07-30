@@ -49,7 +49,7 @@ const TraditionalGridSection = () =>
         </pre>
       }
       output={<TraditionalGrid />}
-      path={"website/components/TraditionalGrid.js"}
+      path={"website/components/sections/TraditionalGrid.js"}
     />
   </section>;
 

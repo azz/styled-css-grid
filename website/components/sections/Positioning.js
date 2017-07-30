@@ -61,7 +61,7 @@ const PositioningSection = () =>
         </pre>
       }
       output={<Positioning />}
-      path={"website/components/Positioning.js"}
+      path={"website/components/sections/Positioning.js"}
     />
   </section>;
 

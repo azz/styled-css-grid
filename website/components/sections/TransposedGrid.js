@@ -56,7 +56,7 @@ const TransposedGridSection = () =>
         </pre>
       }
       output={<TransposedGrid />}
-      path={"website/components/TransposedGrid.js"}
+      path={"website/components/sections/TransposedGrid.js"}
     />
   </section>;
 

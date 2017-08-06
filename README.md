@@ -66,6 +66,16 @@ Props:
 * `rows`: The [grid-template-rows] CSS property. Not provided by default.
 * `areas`: The [grid-template-areas] CSS property. Pass an array of strings, e.g. `["a a", "b c"]`. Not provided by default.
 
+## browser support
+
+_[caniuse]_
+
+You can use CSS grid in production _today_ **if** you don't need to support IE and Edge, or you're building tooling or internal sites where you only need to support one browser.
+
+You can use CSS grid _soon_ if you have to support the latest version of modern browsers. Edge 16 will implement the latest CSS grid spec.
+
+![Can I use?](website/caniuse.png)
+
 [website]: https://styled-css-grid.js.org/
 [CSS grid]: https://mdn.io/CSS_Grid_Layout
 [styled-components]: https://github.com/styled-components/styled-components
@@ -76,4 +86,4 @@ Props:
 [grid-template-rows]: https://mdn.io/grid-template-rows
 [grid-template-areas]: https://mdn.io/grid-template-areas
 [grid-area]: https://mdn.io/grid-area
-
+[caniuse]: http://caniuse.com/#feat=css-grid

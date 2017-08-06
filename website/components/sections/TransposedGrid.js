@@ -9,7 +9,7 @@ import Cell from "../DemoCell";
 const Columns = ({ counts }) =>
   flatMap(counts, (count, i) =>
     range(count).map(number =>
-      <Cell center middle height={12 / count} key={`${number}_${i}`}>
+      <Cell height={12 / count} key={`${number}_${i}`}>
         {number + 1}/{count}
       </Cell>
     )

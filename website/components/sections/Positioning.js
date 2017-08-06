@@ -8,19 +8,13 @@ import Cell from "../DemoCell";
 const Positioning = () =>
   <article>
     <Grid columns={3} minRowHeight="65px">
-      <Cell center middle>
-        Top Left
-      </Cell>
-      <Cell left={3} center middle>
-        Top Right
-      </Cell>
-      <Cell left={2} top={2} center middle>
+      <Cell>Top Left</Cell>
+      <Cell left={3}>Top Right</Cell>
+      <Cell left={2} top={2}>
         Middle
       </Cell>
-      <Cell top={3} center middle>
-        Bottom Left
-      </Cell>
-      <Cell top={3} left={3} center middle>
+      <Cell top={3}>Bottom Left</Cell>
+      <Cell top={3} left={3}>
         Bottom Right
       </Cell>
     </Grid>

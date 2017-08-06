@@ -1,5 +1,6 @@
 import React from "react";
 
+import AreasSection from "./sections/Areas";
 import CenteringSection from "./sections/Centering";
 import DenseSection from "./sections/Dense";
 import HolyGrailSection from "./sections/HolyGrail";
@@ -16,6 +17,7 @@ const Main = () =>
     <DenseSection />
     <ResponsiveSection />
     <HolyGrailSection />
+    <AreasSection />
     <CenteringSection />
   </main>;
 

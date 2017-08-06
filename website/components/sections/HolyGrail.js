@@ -11,21 +11,13 @@ const HolyGrail = () =>
       columns="100px 1fr 100px"
       rows="minmax(45px, auto) 1fr minmax(45px, auto)"
     >
-      <Cell width={3} center middle>
+      <Cell width={3}>
         <h1>Header</h1>
       </Cell>
-      <Cell center middle>
-        Menu
-      </Cell>
-      <Cell center middle>
-        Content
-      </Cell>
-      <Cell center middle>
-        Ads
-      </Cell>
-      <Cell width={3} center middle>
-        Footer
-      </Cell>
+      <Cell>Menu</Cell>
+      <Cell>Content</Cell>
+      <Cell>Ads</Cell>
+      <Cell width={3}>Footer</Cell>
     </Grid>
   </article>;
 

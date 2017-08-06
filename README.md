@@ -50,6 +50,7 @@ Props:
 * `top`: The [grid-row-start] CSS property. Not provided by default.
 * `middle`: Vertically align the contents of the cell. Default is `false`.
 * `center`: Horizontally align the text contents of the cell. Default is `false`.
+* `area`: The [grid-area] CSS property. Not provided by default.
 
 ### `Grid`
 
@@ -63,6 +64,7 @@ Props:
 * `minRowHeight`: Minimum height of each row. Default is `"20px"`.
 * `flow`: The [grid-auto-flow] CSS property. Default is `"row"`.
 * `rows`: The [grid-template-rows] CSS property. Not provided by default.
+* `areas`: The [grid-template-areas] CSS property. Pass an array of strings, e.g. `["a a", "b c"]`. Not provided by default.
 
 [website]: https://styled-css-grid.js.org/
 [CSS grid]: https://mdn.io/CSS_Grid_Layout
@@ -72,3 +74,6 @@ Props:
 [grid-column-start]: https://mdn.io/grid-column-start
 [grid-template-columns]: https://mdn.io/grid-template-columns
 [grid-template-rows]: https://mdn.io/grid-template-rows
+[grid-template-areas]: https://mdn.io/grid-template-areas
+[grid-area]: https://mdn.io/grid-area
+

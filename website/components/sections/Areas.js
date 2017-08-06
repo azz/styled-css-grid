@@ -1,12 +1,12 @@
 import React from "react";
 import { stripIndent } from "common-tags";
-import { Grid } from "../../../";
 import Example from "../Example";
 import Heading from "../Heading";
 import Cell from "../DemoCell";
+import Grid from "../DemoGrid";
 
 const Areas = () =>
-  <article style={{ height: "100%" }}>
+  <article style={{ display: "flex", height: "100%" }}>
     <Grid
       columns={"100px 1fr 100px"}
       rows={"45px 1fr 45px"}

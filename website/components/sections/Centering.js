@@ -1,9 +1,9 @@
 import React from "react";
 import { stripIndent } from "common-tags";
-import { Grid } from "../../../";
 import Example from "../Example";
 import Heading from "../Heading";
 import Cell from "../DemoCell";
+import Grid from "../DemoGrid";
 
 const Centering = () =>
   <article>
@@ -24,7 +24,7 @@ const Centering = () =>
   </article>;
 
 const code = stripIndent`
-  <Grid columns={3}>
+  <Grid columns={2}>
     <Cell>Default</Cell>
     <Cell middle>Middle</Cell>
     <Cell center>Center</Cell>

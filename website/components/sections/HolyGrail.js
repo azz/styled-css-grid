@@ -1,12 +1,12 @@
 import React from "react";
 import { stripIndent } from "common-tags";
-import { Grid } from "../../../";
+import Cell from "../DemoCell";
+import Grid from "../DemoGrid";
 import Example from "../Example";
 import Heading from "../Heading";
-import Cell from "../DemoCell";
 
 const HolyGrail = () =>
-  <article style={{ height: "100%" }}>
+  <article style={{ display: "flex", height: "100%" }}>
     <Grid
       columns="100px 1fr 100px"
       rows="minmax(45px, auto) 1fr minmax(45px, auto)"

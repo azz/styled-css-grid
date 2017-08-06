@@ -4,6 +4,7 @@ import Example from "../Example";
 import Heading from "../Heading";
 import Cell from "../DemoCell";
 import Grid from "../DemoGrid";
+import MdnLink from "../MdnLink";
 
 const Areas = () =>
   <article style={{ display: "flex", height: "100%" }}>
@@ -49,15 +50,10 @@ const AreasSection = () =>
       applies &quot;areas&quot; to it. Using areas means you no longer need to
       use <code>width</code> and <code>height</code> on your cells. Instead you
       specify <code>areas</code> (which maps to{" "}
-      <a href="https://mdn.io/grid-template-areas">
-        <code>grid-template-areas</code>
-      </a>) on your <code>Grid</code>, and use the names you supplied on the{" "}
-      <code>Cell</code>s using the <code>area</code> prop, which again maps
-      directly to the{" "}
-      <a href="https://mdn.io/grid-areas">
-        <code>grid-areas</code>
-      </a>{" "}
-      CSS property.
+      <MdnLink>grid-template-areas</MdnLink>) on your <code>Grid</code>, and use
+      the names you supplied on the <code>Cell</code>s using the{" "}
+      <code>area</code> prop, which again maps directly to the{" "}
+      <MdnLink>grid-areas</MdnLink> CSS property.
     </p>
     <p>
       Notice that this gives you the flexibility to arrange the HTML in a

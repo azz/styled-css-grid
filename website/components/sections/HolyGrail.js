@@ -4,6 +4,7 @@ import Cell from "../DemoCell";
 import Grid from "../DemoGrid";
 import Example from "../Example";
 import Heading from "../Heading";
+import MdnLink from "../MdnLink";
 
 const HolyGrail = () =>
   <article style={{ display: "flex", height: "100%" }}>
@@ -48,13 +49,10 @@ const HolyGrailSection = () =>
         Holy Grail
       </a>{" "}
       layout is trivial using the <code>rows</code> prop. This prop is forwarded
-      to the{" "}
-      <a href="https://mdn.io/grid-template-rows">
-        <code>grid-template-rows</code>
-      </a>{" "}
-      CSS property. In this example we set the first and last rows to be at
-      least 45px tall, but auto-grow if the content grows. The middle row is set
-      to 1fr, which will grow to take up all available space.
+      to the <MdnLink>grid-template-rows</MdnLink> CSS property. In this example
+      we set the first and last rows to be at least 45px tall, but auto-grow if
+      the content grows. The middle row is set to 1fr, which will grow to take
+      up all available space.
     </p>
     <Example
       input={

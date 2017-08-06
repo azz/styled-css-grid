@@ -8,24 +8,12 @@ import Cell from "../DemoCell";
 const Responsive = () =>
   <article>
     <Grid columns="repeat(auto-fit, minmax(120px, 1fr))" minRowHeight="45px">
-      <Cell center middle>
-        A
-      </Cell>
-      <Cell center middle>
-        B
-      </Cell>
-      <Cell center middle>
-        C
-      </Cell>
-      <Cell center middle>
-        D
-      </Cell>
-      <Cell center middle>
-        E
-      </Cell>
-      <Cell center middle>
-        F
-      </Cell>
+      <Cell>A</Cell>
+      <Cell>B</Cell>
+      <Cell>C</Cell>
+      <Cell>D</Cell>
+      <Cell>E</Cell>
+      <Cell>F</Cell>
     </Grid>
   </article>;
 

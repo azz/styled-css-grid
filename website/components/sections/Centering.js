@@ -8,9 +8,15 @@ import Cell from "../DemoCell";
 const Centering = () =>
   <article>
     <Grid columns={2} minRowHeight="45px">
-      <Cell>Default</Cell>
-      <Cell middle>Middle</Cell>
-      <Cell center>Center</Cell>
+      <Cell middle={false} center={false}>
+        Default
+      </Cell>
+      <Cell center={false} middle>
+        Middle
+      </Cell>
+      <Cell center middle={false}>
+        Center
+      </Cell>
       <Cell center middle>
         Center-Middle
       </Cell>

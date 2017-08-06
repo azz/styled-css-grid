@@ -43,7 +43,7 @@ const CenteringSection = () =>
         </pre>
       }
       output={<Centering />}
-      path={"website/components/Centering.js"}
+      path={"website/components/sections/Centering.js"}
     />
   </section>;
 

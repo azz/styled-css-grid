@@ -6,41 +6,42 @@ import Heading from "../Heading";
 import Cell from "../DemoCell";
 
 const HolyGrail = () =>
-  <article>
-    <Grid columns={12} minRowHeight="45px">
-      <Cell width={12} center middle>
-        Header
+  <article style={{ height: "100%" }}>
+    <Grid
+      columns="100px 1fr 100px"
+      rows="minmax(45px, auto) 1fr minmax(45px, auto)"
+    >
+      <Cell width={3} center middle>
+        <h1>Header</h1>
       </Cell>
-      <Cell width={3} height={3} center middle>
+      <Cell center middle>
         Menu
       </Cell>
-      <Cell width={6} height={3} center middle>
+      <Cell center middle>
         Content
       </Cell>
-      <Cell width={3} height={3} center middle>
+      <Cell center middle>
         Ads
       </Cell>
-      <Cell width={12} center middle>
+      <Cell width={3} center middle>
         Footer
       </Cell>
     </Grid>
   </article>;
 
 const code = stripIndent`
-  <Grid columns={12}>
-    <Cell width={12}>
-      Header
+  <Grid
+    columns={"100px 1fr 100px"}
+    rows={"minmax(45px,auto) 1fr minmax(45px,auto)"}>
+    <Cell width={3}>
+      <h1>Header</h1>
     </Cell>
-    <Cell width={3} height={3}>
-      Menu
-    </Cell>
-    <Cell width={6} height={3}>
-      Content
-    </Cell>
-    <Cell width={3} height={3}>
-      Ads
-    </Cell>
-    <Cell width={12}>
+
+    <Cell>Menu</Cell>
+    <Cell>Content</Cell>
+    <Cell>Ads</Cell>
+
+    <Cell width={3}>
       Footer
     </Cell>
   </Grid>
@@ -54,7 +55,14 @@ const HolyGrailSection = () =>
       <a href="https://en.wikipedia.org/wiki/Holy_Grail_(web_design)">
         Holy Grail
       </a>{" "}
-      layout is trivial!
+      layout is trivial using the <code>rows</code> prop. This prop is forwarded
+      to the{" "}
+      <a href="https://mdn.io/grid-template-rows">
+        <code>grid-template-rows</code>
+      </a>{" "}
+      CSS property. In this example we set the first and last rows to be at
+      least 45px tall, but auto-grow if the content grows. The middle row is set
+      to 1fr, which will grow to take up all available space.
     </p>
     <Example
       input={

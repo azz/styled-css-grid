@@ -57,10 +57,12 @@ Wrap your cells in `Grid`. Pretty simple.
 
 Props:
 
-* `columns`: Number of columns to draw, default is `12`.
+* `columns`: The [grid-template-columns] CSS property. When a number is passed
+  it is a shorthand to specify the number of columns. Default is `12`.
 * `gap`: Gap between cells. Default is `"8px"`.
 * `minRowHeight`: Minimum height of each row. Default is `"20px"`.
 * `flow`: The [grid-auto-flow] CSS property. Default is `"row"`.
+* `rows`: The [grid-template-rows] CSS property. Not provided by default.
 
 [website]: https://styled-css-grid.js.org/
 [CSS grid]: https://mdn.io/CSS_Grid_Layout
@@ -68,3 +70,5 @@ Props:
 [grid-auto-flow]: https://mdn.io/grid-auto-flow
 [grid-row-start]: https://mdn.io/grid-row-start
 [grid-column-start]: https://mdn.io/grid-column-start
+[grid-template-columns]: https://mdn.io/grid-template-columns
+[grid-template-rows]: https://mdn.io/grid-template-rows

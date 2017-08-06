@@ -5,6 +5,7 @@ import Grid from "../DemoGrid";
 import { Grid as _Grid, Cell as _Cell } from "../../../";
 import Example from "../Example";
 import Heading from "../Heading";
+import MdnLink from "../MdnLink";
 
 const alignments = [
   "start",
@@ -79,10 +80,8 @@ const AlignmentSection = () =>
     <Heading name="alignment">Alignment</Heading>
     <p>
       Horizontal alignment of columns can be modified using the{" "}
-      <code>justifyContent</code> (<a href="https://mdn.io/justify-content">
-        <code>justify-content</code>
-      </a>{" "}
-      CSS property).
+      <code>justifyContent</code> (<MdnLink>justify-content</MdnLink> CSS
+      property).
     </p>
     <Example
       input={
@@ -96,10 +95,7 @@ const AlignmentSection = () =>
     />
     <p>
       Vertical alignment of rows can be modified using the{" "}
-      <code>alignContent</code> (<a href="https://mdn.io/align-content">
-        <code>align-content</code>
-      </a>{" "}
-      CSS property).
+      <code>alignContent</code> (<MdnLink>align-content</MdnLink> CSS property).
     </p>
     <Example
       input={

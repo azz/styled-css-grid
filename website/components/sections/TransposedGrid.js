@@ -5,6 +5,7 @@ import Cell from "../DemoCell";
 import Grid from "../DemoGrid";
 import Example from "../Example";
 import Heading from "../Heading";
+import MdnLink from "../MdnLink";
 
 const Columns = ({ counts }) =>
   flatMap(counts, (count, i) =>
@@ -41,11 +42,7 @@ const TransposedGridSection = () =>
       even with flexbox. With <code>styled-css-grid</code> this is made simple!
       Just use <code>height</code> instead of <code>width</code> and add{" "}
       <code>flow=&quot;column&quot;</code> to the <code>Grid</code> component.
-      This maps directly to the{" "}
-      <a href="https://mdn.io/grid-auto-flow">
-        <code>grid-auto-flow</code>
-      </a>{" "}
-      CSS property.
+      This maps directly to the <MdnLink>grid-auto-flow</MdnLink> CSS property.
     </p>
     <Example
       input={

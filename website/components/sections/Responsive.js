@@ -4,6 +4,7 @@ import Cell from "../DemoCell";
 import Grid from "../DemoGrid";
 import Example from "../Example";
 import Heading from "../Heading";
+import MdnLink from "../MdnLink";
 
 const Responsive = () =>
   <article>
@@ -29,12 +30,9 @@ const ResponsiveSection = () =>
   <section>
     <Heading name="responsive">Responsive Layout</Heading>
     <p>
-      The{" "}
-      <a href="https://mdn.io/grid-template-columns">
-        <code>grid-template-columns</code>
-      </a>{" "}
-      CSS property is incredibly powerful for building responsive content. When
-      the <code>columns</code> prop is a number, it is a shorthand for{" "}
+      The <MdnLink>grid-template-columns</MdnLink> CSS property is incredibly
+      powerful for building responsive content. When the <code>columns</code>{" "}
+      prop is a number, it is a shorthand for{" "}
       <code>grid-template-columns: repeat(N, 1fr)</code>. However, when you pass
       a string, the value is passed directly to the CSS property, allowing you
       leverage the full power of this property.

@@ -1,9 +1,9 @@
 import React from "react";
 import { stripIndent } from "common-tags";
-import { Grid } from "../../../";
+import Cell from "../DemoCell";
+import Grid from "../DemoGrid";
 import Example from "../Example";
 import Heading from "../Heading";
-import Cell from "../DemoCell";
 
 const Responsive = () =>
   <article>

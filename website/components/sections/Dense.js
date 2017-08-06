@@ -63,7 +63,7 @@ const DenseSection = () =>
     <p>
       By default, <code>styled-css-grid</code> set the flow property to{" "}
       <code>row</code>. However, by setting it to <code>row dense</code> you can
-      turn on CSS grid&quot;s dense cell packing. Notice how the order of the
+      turn on CSS grid&#39;s dense cell packing. Notice how the order of the
       cells in the markup is not same when it is rendered!
     </p>
     <Example

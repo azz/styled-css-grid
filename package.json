@@ -22,7 +22,7 @@
     "prettier": "prettier --write \"{lib,website,scripts}/*.js\"",
     "test": "jest",
     "build": "node scripts/build",
-    "watch:site": "cross-env NODE_ENV=development rollup -c scripts/rollup.website.config.js -w",
+    "watch:site": "rollup -c scripts/rollup.website.config.js -w",
     "start": "http-server website/bin",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -41,7 +41,6 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.24.1",
     "common-tags": "^1.4.0",
-    "cross-env": "^5.0.4",
     "eslint": "^4.3.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-import": "^2.7.0",

@@ -8,6 +8,8 @@ const targets = [
   { dest: "dist/styled-css-grid.umd.js", format: "umd" }
 ];
 
+process.env.NODE_ENV = "build";
+
 export default {
   entry: "index.js",
   moduleName: "StyledCssGrid",

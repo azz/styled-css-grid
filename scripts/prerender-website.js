@@ -7,12 +7,7 @@ const { ServerStyleSheet } = require("styled-components");
 
 require("babel-polyfill");
 require("babel-register")({
-  ignore: path => /node_modules/.test(path) && !/\/lodash-es\//.test(path),
-  presets: [["es2015", { modules: false }], "react"],
-  plugins: [
-    ["transform-es2015-modules-commonjs", { loose: true }],
-    ["styled-components", { minify: true }]
-  ]
+  ignore: path => /node_modules/.test(path) && !/\/lodash-es\//.test(path)
 });
 
 const Page = require("../website/components/Page").default;

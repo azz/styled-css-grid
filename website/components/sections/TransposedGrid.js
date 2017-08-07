@@ -7,7 +7,7 @@ import Example from "../Example";
 import Heading from "../Heading";
 import MdnLink from "../MdnLink";
 
-const Columns = ({ counts }) =>
+const columns = counts =>
   flatMap(counts, (count, i) =>
     range(count).map(number =>
       <Cell height={12 / count} key={`${number}_${i}`}>
@@ -19,7 +19,7 @@ const Columns = ({ counts }) =>
 const TransposedGrid = () =>
   <article>
     <Grid flow="column" columns={5}>
-      <Columns counts={[12, 6, 4, 2, 1]} />
+      {columns([12, 6, 4, 2, 1])}
     </Grid>
   </article>;
 

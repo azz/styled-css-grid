@@ -16,4 +16,7 @@ sh.echo("bundling dist...");
 sh.exec("rollup -c ./scripts/rollup.config.js");
 
 sh.echo("bundling website...");
-sh.exec("rollup -c ./scripts/rollup.website.config.js");
+sh.exec("NODE_ENV=production rollup -c ./scripts/rollup.website.config.js");
+
+sh.echo("pre-rendering website...");
+sh.exec("node scripts/prerender-website");

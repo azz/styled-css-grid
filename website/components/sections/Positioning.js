@@ -36,9 +36,9 @@ const PositioningSection = () =>
     <Heading name="positioning">Positioning</Heading>
     <p>
       You can use the <code>left</code> and <code>top</code> props to set the{" "}
-      <MdnLink>grid-column-</MdnLink> and <MdnLink>grid-row-start</MdnLink> CSS
-      properties, respectively. This allows you to offset content or have finer
-      grain control over the position of cells.
+      <MdnLink>grid-column-start</MdnLink> and <MdnLink>grid-row-start</MdnLink>{" "}
+      CSS properties, respectively. This allows you to offset content or have
+      finer grain control over the position of cells.
     </p>
     <p>Keep in mind that the top-left coordinate is (1, 1), not (0, 0).</p>
     <Example

@@ -6,7 +6,7 @@ import Grid from "../DemoGrid";
 import Example from "../Example";
 import Heading from "../Heading";
 
-const Rows = ({ counts }) =>
+const rows = counts =>
   flatMap(counts, number =>
     range(number).map(i =>
       <Cell width={12 / number} key={`${number}_${i}`}>
@@ -18,7 +18,7 @@ const Rows = ({ counts }) =>
 const TraditionalGrid = () =>
   <article>
     <Grid columns={12} minRowHeight="45px">
-      <Rows counts={[12, 6, 4, 2, 1]} />
+      {rows([12, 6, 4, 2, 1])}
     </Grid>
   </article>;
 

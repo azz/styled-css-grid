@@ -19,14 +19,17 @@
   <meta name="twitter:title" content="styled-css-grid 🍱">
   <meta name="twitter:description" content="A tiny CSS grid layout for React">
 
-  <link rel="stylesheet" href="bin/styles.css">
+  {{css}}
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div class="outlet"></div>
+  <div class="outlet">
+    {{html}}
+  </div>
 
-  <!-- yeah, I really should pre-render this, sorry. -->
-  <script src="bin/website.js"></script>
+  <script async defer src="website.js"></script>
 </body>
 
 </html>

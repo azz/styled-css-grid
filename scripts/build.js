@@ -1,5 +1,4 @@
 "use strict";
-/* eslint-env node */
 
 const sh = require("shelljs");
 const join = require("path").join;
@@ -17,3 +16,6 @@ sh.exec("rollup -c ./scripts/rollup.config.js");
 
 sh.echo("bundling website...");
 sh.exec("rollup -c ./scripts/rollup.website.config.js");
+
+sh.echo("pre-rendering website...");
+sh.exec("node scripts/prerender-website");

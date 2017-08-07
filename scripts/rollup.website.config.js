@@ -6,10 +6,7 @@ import resolve from "rollup-plugin-node-resolve";
 import uglify from "rollup-plugin-uglify";
 import { minify } from "uglify-es";
 
-/* eslint-env node */
-
-const env = process.env.NODE_ENV || "development";
-const prod = env === "production";
+process.env.NODE_ENV = "build";
 
 export default {
   entry: "website/website.js",
@@ -34,6 +31,6 @@ export default {
     }),
     babel({ exclude: "node_modules/**" }),
     css({ output: "website/bin/styles.css" }),
-    prod && uglify({}, minify)
+    uglify({}, minify)
   ]
 };

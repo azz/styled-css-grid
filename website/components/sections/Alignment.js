@@ -19,7 +19,7 @@ const alignments = [
 
 const HorizontalAlignment = () =>
   <_Grid columns="repeat(auto-fit, minmax(200px, 1fr))">
-    {alignments.map(alignment =>
+    {alignments.filter(x => x !== "stretch").map(alignment =>
       <_Cell
         style={{ display: "flex", flexDirection: "column" }}
         key={alignment}

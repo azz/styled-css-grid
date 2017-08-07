@@ -1,13 +1,16 @@
 {
-  "presets": ["react", ["es2015", { "modules": false }]],
+  "presets": [["es2015", { "modules": false }], "react"],
   "env": {
+    "development": {
+      "plugins": [["transform-es2015-modules-commonjs", { "loose": true }]]
+    },
     "test": {
       "plugins": [["transform-es2015-modules-commonjs", { "loose": true }]]
     },
-    "development": {
-      "plugins": ["external-helpers", ["styled-components", { "minify": true }]]
-    },
     "production": {
+      "plugins": [["transform-es2015-modules-commonjs", { "loose": true }]]
+    },
+    "build": {
       "plugins": ["external-helpers", ["styled-components", { "minify": true }]]
     }
   }

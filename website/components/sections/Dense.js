@@ -16,23 +16,23 @@ const Dense = () =>
     <Grid flow="row dense" columns={4} minRowHeight="100px">
       <Cell width={2} height={1} middle={false}>
         A
-        <Image src="http://lorempixel.com/200/100/animals/2/" />
+        <Image src="https://lorempixel.com/200/100/animals/2/" />
       </Cell>
       <Cell width={1} height={2} middle={false}>
         B
-        <Image src="http://lorempixel.com/100/200/animals/1/" />
+        <Image src="https://lorempixel.com/100/200/animals/1/" />
       </Cell>
       <Cell width={2} height={1} middle={false}>
         C
-        <Image src="http://lorempixel.com/200/100/animals/4/" />
+        <Image src="https://lorempixel.com/200/100/animals/4/" />
       </Cell>
       <Cell middle={false}>
         D
-        <Image src="http://lorempixel.com/100/100/animals/3/" />
+        <Image src="https://lorempixel.com/100/100/animals/3/" />
       </Cell>
       <Cell middle={false}>
         E
-        <Image src="http://lorempixel.com/100/100/animals/5/" />
+        <Image src="https://lorempixel.com/100/100/animals/5/" />
       </Cell>
     </Grid>
   </article>;

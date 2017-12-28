@@ -53,6 +53,7 @@
     "normalize.css": "^7.0.0",
     "prettier": "^1.5.3",
     "prismjs": "^1.6.0",
+    "prop-types": "^15.6.0",
     "react": "next",
     "react-dom": "next",
     "react-test-renderer": "next",

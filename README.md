@@ -38,20 +38,6 @@ const MyGrid = () => (
 
 ## api
 
-### `Cell`
-
-A cell. Not too much to say...
-
-Props:
-
-* `width`: Cell width in units, default is `1`.
-* `height`: Cell height in units, default is `1`.
-* `left`: The [grid-column-start] CSS property. Not provided by default.
-* `top`: The [grid-row-start] CSS property. Not provided by default.
-* `middle`: Vertically align the contents of the cell. Default is `false`.
-* `center`: Horizontally align the text contents of the cell. Default is `false`.
-* `area`: The [grid-area] CSS property. Not provided by default.
-
 ### `Grid`
 
 Wrap your cells in `Grid`. Pretty simple.
@@ -67,6 +53,20 @@ Props:
 * `areas`: The [grid-template-areas] CSS property. Pass an array of strings, e.g. `["a a", "b c"]`. Not provided by default.
 * `justifyContent`: The [justify-content] CSS property. Not provided by default.
 * `alignContent`: The [align-content] CSS property. Not provided by default.
+
+### `Cell`
+
+A cell. Not too much to say...
+
+Props:
+
+* `width`: Cell width in units, default is `1`.
+* `height`: Cell height in units, default is `1`.
+* `left`: The [grid-column-start] CSS property. Not provided by default.
+* `top`: The [grid-row-start] CSS property. Not provided by default.
+* `middle`: Vertically align the contents of the cell. Default is `false`.
+* `center`: Horizontally align the text contents of the cell. Default is `false`.
+* `area`: The [grid-area] CSS property. Not provided by default.
 
 ## browser support
 

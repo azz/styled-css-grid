@@ -46,7 +46,7 @@ Props:
 
 * `columns`: The [grid-template-columns] CSS property. When a number is passed
   it is a shorthand to specify the number of columns. Default is `12`.
-* `gap`: Gap between cells. Default is `"8px"`.
+* `gap`: Gap between rows and cells (`row, column`). Pass an String, e.g. `"8px 16px"` — `8px: [row-gap]`, `16px: [column-gap]` or `"8px"` for `[row-gap]` & `[column-gap]`. Default is `"8px"`.
 * `minRowHeight`: Minimum height of each row. Default is `"20px"`.
 * `flow`: The [grid-auto-flow] CSS property. Default is `"row"`.
 * `rows`: The [grid-template-rows] CSS property. When a number is passed

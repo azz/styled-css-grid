@@ -38,6 +38,24 @@ const MyGrid = () => (
 
 ## api
 
+### `Grid`
+
+Wrap your cells in `Grid`. Pretty simple.
+
+Props:
+
+* `columns`: The [grid-template-columns] CSS property. When a number is passed
+  it is a shorthand to specify the number of columns. Default is `12`.
+* `gap`: The [grid-gap] CSS property. Default is `"8px"`.
+* `minRowHeight`: Minimum height of each row. Default is `"20px"`.
+* `flow`: The [height] CSS property. Default is `"auto"`.
+* `flow`: The [grid-auto-flow] CSS property. Default is `"row"`.
+* `rows`: The [grid-template-rows] CSS property. When a number is passed
+  it is a shorthand to specify the number of columns. Not provided by default.
+* `areas`: The [grid-template-areas] CSS property. Pass an array of strings, e.g. `["a a", "b c"]`. Not provided by default.
+* `justifyContent`: The [justify-content] CSS property. Not provided by default.
+* `alignContent`: The [align-content] CSS property. Not provided by default.
+
 ### `Cell`
 
 A cell. Not too much to say...
@@ -51,23 +69,6 @@ Props:
 * `middle`: Vertically align the contents of the cell. Default is `false`.
 * `center`: Horizontally align the text contents of the cell. Default is `false`.
 * `area`: The [grid-area] CSS property. Not provided by default.
-
-### `Grid`
-
-Wrap your cells in `Grid`. Pretty simple.
-
-Props:
-
-* `columns`: The [grid-template-columns] CSS property. When a number is passed
-  it is a shorthand to specify the number of columns. Default is `12`.
-* `gap`: Gap between cells. Default is `"8px"`.
-* `minRowHeight`: Minimum height of each row. Default is `"20px"`.
-* `flow`: The [height] CSS property. Default is `"auto"`.
-* `flow`: The [grid-auto-flow] CSS property. Default is `"row"`.
-* `rows`: The [grid-template-rows] CSS property. Not provided by default.
-* `areas`: The [grid-template-areas] CSS property. Pass an array of strings, e.g. `["a a", "b c"]`. Not provided by default.
-* `justifyContent`: The [justify-content] CSS property. Not provided by default.
-* `alignContent`: The [align-content] CSS property. Not provided by default.
 
 ## browser support
 
@@ -90,6 +91,7 @@ You can use CSS grid _soon_ if you have to support the latest version of modern 
 [grid-template-areas]: https://mdn.io/grid-template-areas
 [grid-area]: https://mdn.io/grid-area
 [height]: https://mdn.io/css-height
+[grid-gap]: https://mdn.io/grid-gap
 [justify-content]: https://mdn.io/justify-content
 [align-content]: https://mdn.io/align-content
 [caniuse]: http://caniuse.com/#feat=css-grid

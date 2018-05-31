@@ -48,7 +48,7 @@ Props:
   it is a shorthand to specify the number of columns. Default is `12`.
 * `gap`: The [grid-gap] CSS property. Default is `"8px"`.
 * `minRowHeight`: Minimum height of each row. Default is `"20px"`.
-* `flow`: The [height] CSS property. Default is `"auto"`.
+* `height`: The [height] CSS property. Default is `"auto"`.
 * `flow`: The [grid-auto-flow] CSS property. Default is `"row"`.
 * `rows`: The [grid-template-rows] CSS property. When a number is passed
   it is a shorthand to specify the number of columns. Not provided by default.

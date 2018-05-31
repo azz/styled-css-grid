@@ -62,6 +62,7 @@ Props:
   it is a shorthand to specify the number of columns. Default is `12`.
 * `gap`: Gap between cells. Default is `"8px"`.
 * `minRowHeight`: Minimum height of each row. Default is `"20px"`.
+* `flow`: The [height] CSS property. Default is `"auto"`.
 * `flow`: The [grid-auto-flow] CSS property. Default is `"row"`.
 * `rows`: The [grid-template-rows] CSS property. Not provided by default.
 * `areas`: The [grid-template-areas] CSS property. Pass an array of strings, e.g. `["a a", "b c"]`. Not provided by default.
@@ -88,6 +89,7 @@ You can use CSS grid _soon_ if you have to support the latest version of modern 
 [grid-template-rows]: https://mdn.io/grid-template-rows
 [grid-template-areas]: https://mdn.io/grid-template-areas
 [grid-area]: https://mdn.io/grid-area
+[height]: https://mdn.io/css-height
 [justify-content]: https://mdn.io/justify-content
 [align-content]: https://mdn.io/align-content
 [caniuse]: http://caniuse.com/#feat=css-grid

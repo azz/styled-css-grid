@@ -27,6 +27,7 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "peerDependencies": {
+    "clean-tag": "^1.0.4",
     "react": "*",
     "react-dom": "*",
     "styled-components": "^2"

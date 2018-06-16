@@ -44,17 +44,18 @@ Wrap your cells in `Grid`. Pretty simple.
 
 Props:
 
-* `columns`: The [grid-template-columns] CSS property. When a number is passed
+- `columns`: The [grid-template-columns] CSS property. When a number is passed
   it is a shorthand to specify the number of columns. Default is `12`.
-* `gap`: The [grid-gap] CSS property. Default is `"8px"`.
-* `minRowHeight`: Minimum height of each row. Default is `"20px"`.
-* `height`: The [height] CSS property. Default is `"auto"`.
-* `flow`: The [grid-auto-flow] CSS property. Default is `"row"`.
-* `rows`: The [grid-template-rows] CSS property. When a number is passed
+- `gap`: The [grid-gap] CSS property. Default is `"8px"`.
+- `minRowHeight`: Minimum height of each row. Default is `"20px"`.
+- `height`: The [height] CSS property. Default is `"auto"`.
+- `flow`: The [grid-auto-flow] CSS property. Default is `"row"`.
+- `rows`: The [grid-template-rows] CSS property. When a number is passed
   it is a shorthand to specify the number of columns. Not provided by default.
-* `areas`: The [grid-template-areas] CSS property. Pass an array of strings, e.g. `["a a", "b c"]`. Not provided by default.
-* `justifyContent`: The [justify-content] CSS property. Not provided by default.
-* `alignContent`: The [align-content] CSS property. Not provided by default.
+- `areas`: The [grid-template-areas] CSS property. Pass an array of strings, e.g. `["a a", "b c"]`. Not provided by default.
+- `justifyContent`: The [justify-content] CSS property. Not provided by default.
+- `alignContent`: The [align-content] CSS property. Not provided by default.
+- `is`: The tag property. Default is `"div"`
 
 ### `Cell`
 
@@ -62,13 +63,14 @@ A cell. Not too much to say...
 
 Props:
 
-* `width`: Cell width in units, default is `1`.
-* `height`: Cell height in units, default is `1`.
-* `left`: The [grid-column-start] CSS property. Not provided by default.
-* `top`: The [grid-row-start] CSS property. Not provided by default.
-* `middle`: Vertically align the contents of the cell. Default is `false`.
-* `center`: Horizontally align the text contents of the cell. Default is `false`.
-* `area`: The [grid-area] CSS property. Not provided by default.
+- `width`: Cell width in units, default is `1`.
+- `height`: Cell height in units, default is `1`.
+- `left`: The [grid-column-start] CSS property. Not provided by default.
+- `top`: The [grid-row-start] CSS property. Not provided by default.
+- `middle`: Vertically align the contents of the cell. Default is `false`.
+- `center`: Horizontally align the text contents of the cell. Default is `false`.
+- `area`: The [grid-area] CSS property. Not provided by default.
+- `is`: The tag property. Default is `"section"`
 
 ## browser support
 
@@ -81,7 +83,7 @@ You can use CSS grid _soon_ if you have to support the latest version of modern 
 ![Can I use?](website/caniuse.png)
 
 [website]: https://styled-css-grid.js.org/
-[CSS grid]: https://mdn.io/CSS_Grid_Layout
+[css grid]: https://mdn.io/CSS_Grid_Layout
 [styled-components]: https://github.com/styled-components/styled-components
 [grid-auto-flow]: https://mdn.io/grid-auto-flow
 [grid-row-start]: https://mdn.io/grid-row-start

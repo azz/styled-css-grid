@@ -4,7 +4,6 @@ cache:
     - ~/.npm
 node_js:
   - '10'
-dist: precise
 cache:
   yarn: true
   directories:

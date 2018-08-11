@@ -4,7 +4,6 @@ cache:
     - ~/.npm
 node_js:
   - '10'
-  - '6'
 dist: precise
 cache:
   yarn: true
@@ -19,7 +18,7 @@ script:
   - yarn build --production
   - yarn test -- --runInBand
 after_success:
-  - yarn travis-deploy-once "yarn add semantic-release@^15.9.8 && yarn semantic-release"
+  - yarn semantic-release
 branches:
   only:
     - master

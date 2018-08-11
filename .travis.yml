@@ -1,10 +1,10 @@
----
 language: node_js
+cache:
+  directories:
+    - ~/.npm
 node_js:
-  - stable
-  - 4
-node_js:
-  - stable
+  - '10'
+  - '6'
 dist: precise
 cache:
   yarn: true
@@ -19,7 +19,7 @@ script:
   - yarn build --production
   - yarn test -- --runInBand
 after_success:
-  - yarn semantic-release
+  - yarn travis-deploy-once "yarn semantic-release"
 branches:
   only:
     - master

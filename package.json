@@ -24,7 +24,8 @@
     "build": "node scripts/build",
     "watch:site": "rollup -c scripts/rollup.website.config.js -w",
     "start": "http-server website/bin",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "peerDependencies": {
     "react": "*",
@@ -66,9 +67,10 @@
     "rollup-plugin-replace": "^1.1.1",
     "rollup-plugin-uglify": "^2.0.1",
     "rollup-watch": "^4.3.1",
-    "semantic-release": "^6.3.6",
+    "semantic-release": "^15.9.8",
     "shelljs": "^0.7.8",
     "styled-components": "^2.1.1",
-    "uglify-es": "^3.0.26"
+    "uglify-es": "^3.0.26",
+    "travis-deploy-once": "^5.0.2"
   }
 }

@@ -8,15 +8,8 @@
   "repository": "https://github.com/azz/styled-css-grid",
   "author": "Lucas Azzola",
   "license": "MIT",
-  "files": [
-    "dist"
-  ],
-  "keywords": [
-    "grid",
-    "css",
-    "react",
-    "styled-components"
-  ],
+  "files": ["dist"],
+  "keywords": ["grid", "css", "react", "styled-components"],
   "scripts": {
     "lint": "eslint .",
     "prettier": "prettier --write \"{lib,website,scripts}/*.js\"",
@@ -32,7 +25,8 @@
     "styled-components": "^2 || ^3"
   },
   "dependencies": {
-    "prop-types": "^15.6.0"
+    "prop-types": "^15.6.0",
+    "clean-tag": "^1.0.4"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",

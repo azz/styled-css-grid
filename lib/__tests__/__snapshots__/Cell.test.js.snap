@@ -4,9 +4,6 @@ exports[`<Cell/> 'middle' prop vertically aligns contents 1`] = `
 .c0 {
   height: 100%;
   min-width: 0;
-  -webkit-align-content: space-around;
-  -ms-flex-line-pack: space-around;
-  align-content: space-around;
   grid-column-end: span 1;
   grid-row-end: span 1;
   display: -webkit-inline-box;
@@ -35,9 +32,6 @@ exports[`<Cell/> matches snapshot with default args 1`] = `
 .c0 {
   height: 100%;
   min-width: 0;
-  -webkit-align-content: space-around;
-  -ms-flex-line-pack: space-around;
-  align-content: space-around;
   grid-column-end: span 1;
   grid-row-end: span 1;
 }

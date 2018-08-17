@@ -23,7 +23,7 @@ exports[`<Cell/> 'middle' prop vertically aligns contents 1`] = `
   justify-self: stretch;
 }
 
-<section
+<div
   className="c0"
 />
 `;
@@ -36,7 +36,7 @@ exports[`<Cell/> matches snapshot with default args 1`] = `
   grid-row-end: span 1;
 }
 
-<section
+<div
   className="c0"
 />
 `;

@@ -8,6 +8,7 @@
   "repository": "https://github.com/azz/styled-css-grid",
   "author": "Lucas Azzola",
   "license": "MIT",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],

@@ -14,6 +14,9 @@ sh.mkdir("-p", "./website/bin");
 sh.echo("bundling dist...");
 sh.exec("rollup -c ./scripts/rollup.config.js");
 
+sh.echo("copying typescript definitions to dist...");
+sh.cp("./index.d.ts", "./dist");
+
 sh.echo("bundling website...");
 sh.exec("rollup -c ./scripts/rollup.website.config.js");
 

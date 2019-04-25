@@ -53,7 +53,7 @@ Props:
 * `height`: The [height] CSS property. Default is `"auto"`.
 * `flow`: The [grid-auto-flow] CSS property. Default is `"row"`.
 * `rows`: The [grid-template-rows] CSS property. When a number is passed
-  it is a shorthand to specify the number of columns. Not provided by default.
+  it is a shorthand to specify the number of rows. Not provided by default.
 * `areas`: The [grid-template-areas] CSS property. Pass an array of strings, e.g. `["a a", "b c"]`. Not provided by default.
 * `justifyContent`: The [justify-content] CSS property. Not provided by default.
 * `alignContent`: The [align-content] CSS property. Not provided by default.

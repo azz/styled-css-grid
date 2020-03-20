@@ -30,7 +30,7 @@
   "peerDependencies": {
     "react": "*",
     "react-dom": "*",
-    "styled-components": "^2 || ^3 || ^4"
+    "styled-components": "^2 || ^3 || ^4 || ^5"
   },
   "dependencies": {
     "prop-types": "^15.6.0"

@@ -67,8 +67,8 @@
     "rollup-plugin-replace": "^1.1.1",
     "rollup-plugin-uglify": "^2.0.1",
     "rollup-watch": "^4.3.1",
+    "semantic-release": "24.0.0",
     "shelljs": "^0.7.8",
-    "semantic-release": "^15.9.8",
     "styled-components": "^2.1.1",
     "uglify-es": "^3.0.26"
   }
